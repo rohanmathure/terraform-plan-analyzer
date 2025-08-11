@@ -4,7 +4,7 @@ Parser module for Terraform plan output.
 import re
 from typing import Dict, List, Optional, Tuple
 
-from ..models import ResourceCounts
+from src.models import ResourceCounts
 
 
 class TerraformPlanParser:

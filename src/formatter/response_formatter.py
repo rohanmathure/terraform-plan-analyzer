@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from ..models import AnalysisResponse, Error, ResponseStatus, Metadata, ResourceCounts
+from src.models import AnalysisResponse, Error, ResponseStatus, Metadata, ResourceCounts
 
 
 class ResponseFormatter:

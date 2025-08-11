@@ -4,11 +4,11 @@ Main agent module that orchestrates the Terraform plan analysis.
 import json
 from typing import Dict, Any, Optional
 
-from .parser.plan_parser import TerraformPlanParser
-from .error_detector.detector import ErrorDetector
-from .recommender.engine import RecommendationEngine
-from .formatter.response_formatter import ResponseFormatter
-from .models import AnalysisResponse, ResponseStatus
+from src.parser.plan_parser import TerraformPlanParser
+from src.error_detector.detector import ErrorDetector
+from src.recommender.engine import RecommendationEngine
+from src.formatter.response_formatter import ResponseFormatter
+from src.models import AnalysisResponse, ResponseStatus
 
 
 def analyze_terraform_plan(plan_output: str) -> str:

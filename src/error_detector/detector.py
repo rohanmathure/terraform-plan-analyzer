@@ -4,7 +4,7 @@ Error detection module for Terraform plan output.
 import re
 from typing import Dict, List, Optional
 
-from ..models import Error, ErrorType, AffectedResource
+from src.models import Error, ErrorType, AffectedResource
 
 
 class ErrorDetector:

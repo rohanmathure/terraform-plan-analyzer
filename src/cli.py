@@ -6,7 +6,7 @@ import sys
 import json
 from typing import Optional
 
-from .agent import analyze_terraform_plan, parse_json_response
+from src.agent import analyze_terraform_plan, parse_json_response
 
 
 def main():

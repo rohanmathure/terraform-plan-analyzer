@@ -4,7 +4,7 @@ Recommendation engine for Terraform plan errors.
 import re
 from typing import Dict, List, Optional
 
-from ..models import Error, ErrorType, Recommendation, ConfidenceLevel, AffectedResource
+from src.models import Error, ErrorType, Recommendation, ConfidenceLevel, AffectedResource
 
 
 class RecommendationEngine:
@@ -88,7 +88,7 @@ class RecommendationEngine:
             recommendations.append(
                 Recommendation(
                     description=f"Add the required '{field}' field to your {resource_type} configuration",
-                    code=f"resource \"{resource_type}\" \"name\" {\n  # Add this required field\n  {field} = \"value\"\n  # ... other configuration ...\n}",
+                    code=f"resource \"{resource_type}\" \"name\" \n  # Add this required field\n  {field} = \"value\"\n  # ... other configuration ...\n",
                     confidence=ConfidenceLevel.HIGH
                 )
             )
