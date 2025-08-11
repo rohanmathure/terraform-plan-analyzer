@@ -1,2 +1,4 @@
 ./devbox
 ./git
+
+**/__pycache__/**
